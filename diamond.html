@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
         <link href="javascript.js"  />
+        <link href="tailwind.css"  />
         <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Diamond</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Suvarna Jewellers</title>
 </head>
 
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-  rel="stylesheet" />
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
@@ -35,62 +38,72 @@
 </script>
 
 
-<body>
+<body class="overflow-x-hidden">
 
   <!-- component -->
 <style>
+  html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
   .bg-primary {
       --tw-bg-opacity: 1;
       background-color: rgba(106, 19, 19, var(--tw-bg-opacity));
   }
+  @media (max-width: 767px) {
+  #carouselExampleCaptions {
+    margin-top: 50px; /* Adjust this value to push the carousel down below the navigation bar */
+    height: 200px; /* Adjust this value to set the height of the carousel */
+    overflow: visible !important;
+  }
+}
 </style>
 
 <div class="bg-primary text-white flex items-center justify-center">
 <p class="uppercase text-xs tracking-widest text-center px-4 py-3">
-  livraison offerte en point relais mondial relay en france métropolitaine
+ 
 </p>
 </div>
-  <nav class="bg-white dark:bg-gray-150 fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
 
+<!-- nav bar starts from here -->
 
-    <div class="bg-primary text-white flex items-center justify-center">
-      <p class="uppercase text-xs tracking-widest text-center px-4 py-3">
-       Suwarna Jewellers 
-      </p>
-      </div>
-
-
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="index.html" class="flex items-center">
-        <!-- <img src="" class="h-8 mr-3" alt=" Logo"> -->
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Suwarna</span>
-    </a>
-    <div class="flex md:order-2">
-        <button type="button" class="nav-enrol-btn rounded-full"></button>
-        <button class="inline-block relative">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-            </svg>
-            <span class="animate-ping absolute top-1 right-0.5 block h-1 w-1 rounded-full ring-2 ring-green-400 bg-green-600"></span>
-        </button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  " aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        </button>
-    </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  ">
-        <li>
-          <a href="gold.html" class="block py-2 pl-3 pr-4 text-black  md:bg-transparent md:text-black-700 md:p-0 md:dark:text-black-500" aria-current="page">Gold</a>
-        </li>
-        <li>
-          <a href="diamond.html" class="block py-2 pl-3 pr-4 text-black  md:bg-transparent md:text-black-700 md:p-0 md:dark:text-black-500">Diamond</a>
-        </li>
-       
-      </ul>
-    </div>
-    </div>
-  </nav>
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="index.html" class="flex items-center">
+      <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo"> -->
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SUVARNA JEWELLERS </span>
+  </a>
+  <div class="flex md:order-2">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Exquisite Jewelries</button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="gold.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gold</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Silver</a>
+      </li>
+      <li>
+        <a href="diamond.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Diamond</a>
+      </li>
+      <li>
+        <a href="contactus.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contac Us</a>
+        
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
 
 
 
@@ -124,7 +137,7 @@
                        
                     </div>
                     <div class="inline-block align-bottom">
-                        <button class="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> BUY NOW</button>
+                        <button class="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> Suvarna Jewellerss</button>
                     </div>
                 </div>
             </div>
@@ -600,23 +613,27 @@
       <div>
       <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
         <p class="max-w-xs mt-4 text-sm text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+          Exquisite Jewelry Collections In Dehradun
+
+
         </p>
         
       </div>
       <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <p class="font-medium text-white">
-            Company
+           MENU
           </p>
           <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
-            <a class="hover:opacity-75" href> About </a>
-            <a class="hover:opacity-75" href> Meet the Team </a>
-            <a class="hover:opacity-75" href> History </a>
-            <a class="hover:opacity-75" href> Careers </a>
+            <a class="hover:opacity-75" href="index.html"> Home </a>
+            <a class="hover:opacity-75" href="gold.html"> Gold </a>
+            <a class="hover:opacity-75" href=""> Silver </a>
+            <a class="hover:opacity-75" href="diamond.html"> Diamond </a>
+            <a class="hover:opacity-75" href="contactus.html"> contact Us </a>
+
           </nav>
         </div>
-        <div>
+        <!-- <div>
           <p class="font-medium text-white">
             Services
           </p>
@@ -627,42 +644,34 @@
             <a class="hover:opacity-75" href> HR Consulting </a>
             <a class="hover:opacity-75" href> SEO Optimisation </a>
           </nav>
-        </div>
-        <div>
-          <p class="font-medium text-white">
-            Helpful Links
-          </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
-            <a class="hover:opacity-75" href> Contact </a>
-            <a class="hover:opacity-75" href> FAQs </a>
-            <a class="hover:opacity-75" href> Live Chat </a>
-          </nav>
-        </div>
-        <div>
-          <p class="font-medium text-white">
-            Legal
-          </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
-            <a class="hover:opacity-75" href> Privacy Policy </a>
-            <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
-            <a class="hover:opacity-75" href> Returns Policy </a>
-            <a class="hover:opacity-75" href> Accessibility </a>
-          </nav>
-        </div>
+        </div> -->
+       
+       
       </div>
     </div>
     <p class="mt-8 text-xs text-white">
-      © 2022 Grandeurnet
+      © 2022  Managed by Grandeurnet Company
     </p>
   </div>
 </footer>
-  
-  
-  <!-- Footer end -->
-  
-  
-  
-  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-  
-  </body>
-  </html>
+
+
+<!-- Footer end -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector("[data-collapse-toggle]");
+    const navbar = document.querySelector("#navbar-sticky");
+
+    menuButton.addEventListener("click", function () {
+      navbar.classList.toggle("hidden");
+    });
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+
+</body>
+</html>
